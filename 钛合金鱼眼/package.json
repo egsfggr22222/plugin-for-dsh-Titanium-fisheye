@@ -1,0 +1,45 @@
+{
+  "name": "titanium-fisheye",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "钛合金鱼眼 (Titanium Fisheye) —— 给 agent 一双真正的眼睛：全屏、单窗口、桌面都能精确截图，被窗口遮挡也看得见。",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json",
+    "./icon": "./icon.svg",
+    "./capture.ps1": "./capture.ps1",
+    "./skills/eye-measure.md": "./skills/eye-measure.md"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "capture.ps1",
+    "skills/eye-measure.md",
+    "icon.svg",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": []
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "screenshot",
+    "capture",
+    "vision",
+    "titanium-fisheye",
+    "钛合金鱼眼"
+  ]
+}

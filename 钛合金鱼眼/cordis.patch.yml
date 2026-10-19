@@ -1,0 +1,8 @@
+# Titanium Fisheye bundle patch.
+#
+# One insert mounts the Host half: the capture engine wrapper, the `eye` tool,
+# and the status routes the settings page reads.
+- insert:
+    - id: titanium-fisheye
+      name: 'titanium-fisheye'
+      config: {}
